@@ -1,0 +1,15 @@
+What is a Container?
+=> Container is a 
+- Layer of images 
+- Mostly Linux Base Image (Ubuntu, Alpine, or CentOS.), because Linux Based Images are typically smaller in size compared to images based on other operating systems,
+Note: Most of them are Alpine:
+
+
+To sum it up:
+
+A container is an isolated and lightweight runtime environment that encapsulates an application and its dependencies.
+It provides a consistent and reproducible environment for running software across different computing environments.
+
+Containers are built from container images, which consist of multiple layers. Each layer represents a specific component or modification to the base image.
+These layers are stacked on top of each other to create the final container image.
+
