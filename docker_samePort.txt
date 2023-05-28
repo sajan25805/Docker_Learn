@@ -1,0 +1,11 @@
+### Docker Port binding
+
+Suppose we have two container running on port 6379
+Then at that time, we need to do port binding.
+For that
+
+docker run -p<port_number_which_you_want_it_to_run>:<port_number_to_be_bined> mage_name
+For eg:
+docker run -p6380:6379 redis    
+
+Here, we have binded the port to run in 6380 instead of 6379

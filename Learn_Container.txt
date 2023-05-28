@@ -22,4 +22,4 @@ Is isolated from other containers and runs its own software, binaries, and confi
 When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.
 
 You’ll dive deeper into images later on in this guide, covering topics such as layering, best practices, and more.
-
+    

@@ -3,7 +3,34 @@
 1. docker ps = List all the open docker container.
 2. docker ps -a = List all containers (including stopped ones).
 3. docker run: Creates and starts a new Docker container from a specified image.
+4. docker -d redis = Run the docker in the detached mode.
+5. docker stop <container_id> = Stops the container 
     Example: docker run <image_name>
+
+## Docker command for port binding.
+
+6. docker run -d -pP1:P2 <images>
+
+eg: docker run -d -p6380:6379 redis    
+
+Note:
+-d : detached
+-p : port
+
+P1 = <port_number_which_you_want_it_to_run>
+P2 = <port_number_to_be_bined> 
+
+## Docker Commands for trouble shooting.
+    #Seeing the Logs of the container
+7. docker logs [options] container
+
+8.  docker run --name container
+
+# To open docker container terminal.
+
+9. docker exec -it containerid /bin/bash
+
+
 
 
 
@@ -16,4 +43,16 @@ Checking the status of the Docker.
 
 Start the Docker.
 - sudo systemctl start docker
+
+
+## Difference between docker start and docker run:
+
+docker run :
+To run the docker for the first time.
+
+docker run -d --name -P
+
+docker start container 
+- To start the already created but stopped container.
+
 
