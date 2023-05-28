@@ -1,0 +1,19 @@
+###Docker Commands Learned So far,
+
+1. docker ps = List all the open docker container.
+2. docker ps -a = List all containers (including stopped ones).
+3. docker run: Creates and starts a new Docker container from a specified image.
+    Example: docker run <image_name>
+
+
+
+To stop the Docker service on Ubuntu, you can use the following command:
+- sudo systemctl stop docker
+
+
+Checking the status of the Docker.
+- sudo systemctl status docker
+
+Start the Docker.
+- sudo systemctl start docker
+

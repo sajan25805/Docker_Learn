@@ -1,0 +1,25 @@
+W1.) hat is a Container?
+=> Container is a 
+- Layer of images 
+- Mostly Linux Base Image (Ubuntu, Alpine, or CentOS.), because Linux Based Images are typically smaller in size compared to images based on other operating systems,
+Note: Most of them are Alpine:
+
+
+To sum it up:
+
+A container is an isolated and lightweight runtime environment that encapsulates an application and its dependencies.
+It provides a consistent and reproducible environment for running software across different computing environments.
+
+Containers are built from container images, which consist of multiple layers. Each layer represents a specific component or modification to the base image.
+These layers are stacked on top of each other to create the final container image.
+
+Is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI.
+Can be run on local machines, virtual machines or deployed to the cloud.
+Is portable (can be run on any OS).
+Is isolated from other containers and runs its own software, binaries, and configurations.
+
+2.) What is a container image?
+When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.
+
+You’ll dive deeper into images later on in this guide, covering topics such as layering, best practices, and more.
+
