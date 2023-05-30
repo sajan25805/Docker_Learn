@@ -3,7 +3,7 @@
 1. docker ps = List all the open docker container.
 2. docker ps -a = List all containers (including stopped ones).
 3. docker run: Creates and starts a new Docker container from a specified image.
-4. docker -d redis = Run the docker in the detached mode.
+4. docker run -d redis = Run the docker in the detached mode.
 5. docker stop <container_id> = Stops the container 
     Example: docker run <image_name>
 

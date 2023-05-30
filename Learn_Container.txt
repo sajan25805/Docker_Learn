@@ -1,4 +1,4 @@
-W1.) hat is a Container?
+1.) hat is a Container?
 => Container is a 
 - Layer of images 
 - Mostly Linux Base Image (Ubuntu, Alpine, or CentOS.), because Linux Based Images are typically smaller in size compared to images based on other operating systems,

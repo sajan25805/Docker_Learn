@@ -1,0 +1,44 @@
+## Docker Network.
+
+Network: A Docker network is a virtual network that connects containers. 
+         Networks provide isolation and allow containers to communicate
+         with each other using IP addresses or DNS-based service discovery.
+
+
+We can create our own network using:
+
+# docker network create <name_of_network>
+
+
+
+Here is an example of running mongo container using all the things we have learned so far,
+
+docker run  -d 
+-p 27017:27017 
+-e MONGO_INITDB_ROOT_USERNAME=sajan
+-e MONGO_INITDB_ROOT_PASSWORD=password 
+--name mongodb
+--network mongo-network
+mongo
+
+Here,
+
+-p => stands for port 
+-e => stands for environment variable
+--name => stands for giving name to the container.
+--network => assign the container to the certain network.
+
+
+
+## Commands
+
+Use these after docker network
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  prune       Remove all unused networks
+  rm          Remove one or more networks
+
